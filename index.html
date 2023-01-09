@@ -1,10 +1,126 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Graphic Design Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      color: #333333;
+    }
+
+    .header {
+      background-color: #F44336;
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #03A9F4;
+      color: #FFFFFF;
+      padding: 0 20px;
+    }
+
+    .navbar a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      color: #EEEEEE;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      flex: 0 0 31%;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      padding: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      padding: 0 10px 10px 10px;
+    }
+
+    .card a {
+      display: block;
+      background-color: #03A9F4;
+      color: #FFFFFF;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .card a:hover {
+      background-color: #0288D1;
+    }
+
+    .footer {
+      background-color: #EEEEEE;
+      color: #333333;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
-
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+  <div class="header">
+    <h1>Graphic Design Portfolio</h1>
+  </div>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="main">
+    <div class="card">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet
+  </p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="card">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in fermentum massa. Vestibulum interdum ligula at purus sollicitudin, id eleifend diam dictum.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="card">
+      <img src="project3.jpg" alt="Project 3">
+      <h3>Project 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in fermentum massa. Vestibulum interdum ligula at purus sollicitudin, id eleifend diam dictum.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright 2021</p>
+  </div>
 </body>
 </html>
